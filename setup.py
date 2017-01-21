@@ -19,13 +19,13 @@ class SageTest(TestCommand):
             sys.exit(1)
 
 setup(
-    name = "sage_sample",
+    name = "oeis_gf",
     version = readfile("VERSION"), # the VERSION file is shared with the documentation
-    description='An example of a basic sage package',
+    description='OEIS generating functions',
     long_description = readfile("README.rst"), # get the long description from the README
-    url='https://github.com/nthiery/sage_sample',
-    author='Nicolas M. Thiéry, Viviane Pons',
-    author_email='viviane.pons@lri.fr', # choose a main contact email
+    url='https://github.com/eluzhnica/oeis_gf.git',
+    author='Enxhell Luzhnica',
+    author_email='enxhell.luzhnica@gmail.com', # choose a main contact email
     license='GPLv2+', # This should be consistent with the LICENCE file
     classifiers=[
       # How mature is this project? Common values are
@@ -40,6 +40,6 @@ setup(
       'Programming Language :: Python :: 2.7',
     ], # classifiers list: https://pypi.python.org/pypi?%3Aaction=list_classifiers
     keywords = "SageMath packaging",
-    packages = ['sage_sample'],
+    packages = ['oeis_gf'],
     cmdclass = {'test': SageTest} # adding a special setup command for tests
 )

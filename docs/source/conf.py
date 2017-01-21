@@ -13,11 +13,11 @@
 # serve to show the default.
 
 # General information about the project.
-project = u"An example of a basic sage package"
-copyright = u'2016, Viviane Pons'
-package_name = 'sage_sample'
-package_folder = "../../sage_sample"
-authors = u"Nicolas M. Thiéry, Viviane Pons"
+project = u"OEIS generating functions"
+copyright = u'2016, Enxhell Luzhnica'
+package_name = 'oeis_gf'
+package_folder = "../../oeis_gf"
+authors = u"Enxhell Luzhnica"
 
 import sys
 import os

@@ -1,13 +1,9 @@
 ===================
-Sage Sample Package
+OEIS GF Package
 ===================
 
 This package is designed as as simple `SageMath <http://www.sagemath.org>`_ package 
-example to serve as a good practice reference for package developers. We follow 
-python recommendations and adapt them to the SageMath community. You can find more 
-advanced documentation on python package creation on 
-`How To Package Your Python Code <https://packaging.python.org/>`_.
-
+for OEIS generating functions. Currently it supports the ordinary generating functions only.
 
 Installation
 ------------
@@ -33,22 +29,9 @@ Usage
 
 Once the package is installed, you can use it on Sage with::
 
-    sage: from sage_sample import answer_to_ultimate_question
-    sage: answer_to_ultimate_question()
-    42
-
-Setup
-------
-
-All packaging setup is done through the ``setup.py``. To create your own package
-follow the strcuture of the file and change the parameters accordingly.
-
-Source code
------------
-
-All source code is stored in the folder ``sage_sample`` using the same name as the
-package. This is not mandatory but highly recommended for clarity. All source folder 
-must contain a ``__init__.py`` file with needed includes.
+    sage: from oeis_gf import 
+    sage: A000027()['ogf']
+    [x/(x - 1)^2]
 
 Tests
 -----
@@ -90,14 +73,4 @@ we do here.
 Travis CI integration
 ---------------------
 
-Scripts that run ``make test`` on various SageMath versions on the
-Travis CI system are included.
-https://docs.travis-ci.com/user/for-beginners explains how to enable
-automatic Travis CI builds for your GitHub-hosted project.
-
-The scripts download and install binary releases (7.1-7.4) from a
-SageMath mirror.  Edit ``.travis-install.sh`` if some optional or
-experimental SageMath packages need to be installed prior to running
-your package.  Edit ``.travis.yml`` to change the list of SageMath
-versions used.
-
+TODO;
